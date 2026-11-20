@@ -48,7 +48,7 @@ add_dependencies(libcjson cjson)
 # cimplog external dependency
 ExternalProject_Add(cimplog
     PREFIX ${PREFIX_DIR}/cimplog
-    GIT_REPOSITORY https://github.com/Comcast/cimplog.git
+    GIT_REPOSITORY https://github.com/rdkcentral/cimplog.git
     GIT_TAG "8a5fb3c2f182241d17f5342bea5b7688c28cd1fd"
     CMAKE_ARGS += -DCMAKE_INSTALL_PREFIX=${INSTALL_DIR}
                   -DBUILD_TESTING=OFF
